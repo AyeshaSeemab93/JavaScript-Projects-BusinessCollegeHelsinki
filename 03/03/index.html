@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+
+  <script src="Scripts/showPic.js" type="text/javascript">
+  </script>
+  <style>
+    body{
+      font-family: Roboto;
+      font-size: 1.2rem;
+     margin-left: 5rem;
+    }
+    h1{
+      color: #CBCBCB;
+      letter-spacing: 2rem;
+    }
+    section{
+      width: 80%;
+      background-color: #CCCCCC;
+      padding-left: 1rem;
+    
+    }
+    .list{
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      width: 50%;
+      padding: 1rem;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      flex-grow: 1;
+    }
+    .placeholder{
+      border: solid;
+      border-width: 1rem;
+      border-color: white;
+   
+    }
+    p{
+      padding-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Snapshots</h1>
+  <section>
+  <ul class="list">
+    <li><a href="images/js-gallery-fireworks.jpg" title="Fireworks" onclick="showPic(this); return false;">Fireworks</a></li>
+    <li><a href="images/js-gallery-coffee.jpg" title="Coffee" onclick="showPic(this); return false;">Coffee</a></li>
+    <li><a href="images/js-gallery-rose.jpg" title="Rose" onclick="showPic(this); return false;">Rose</a></li>
+    <li><a href="images/js-gallery-bigben.jpg" title="Big Ben" onclick="showPic(this); return false;">Big Ben</a></li>
+  </ul>
+  <img class="placeholder" src="images/placeholder-text.gif" alt="my image gallery">
+ 
+  <p id="description">Choose an image.</p>
+</section>
+</body>
+</html>
