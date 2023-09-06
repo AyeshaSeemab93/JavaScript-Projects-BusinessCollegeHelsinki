@@ -13,8 +13,9 @@ kokobutton.onclick= ()=>{
 
 }
 
-let fontFamily = ["Roboto", "Mansalva", "Grenze", "Turrent Road", "Courier New" ];
+let fontFamily = ["Roboto", "Mansalva", "Grenze", "Turret Road", "Courier New" ];
 fontbutton.onclick = () => {
+  //to keep going round and round:
 index = (index + 1) %fontFamily.length
 let newFont = fontFamily[index];
 list.style.fontFamily = newFont;
