@@ -1,0 +1,60 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+ul{
+  list-style: disc;
+  padding: 1rem 1rem 1rem 4rem;
+  list-style: 1.5;
+}
+h1,h2{
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+table{
+  margin-bottom: 1rem;
+}
+tr{
+  line-height: 2rem;
+}
+td{
+  padding-right: 1rem;
+}
+
+/*rest of the CSS-rule applied using Javascript*/
+/* #menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}  */
+/* #sub{
+list-style: none;
+} */
+/* #inner-list{
+  background-color: #D3D3D3;
+  margin-top: 1rem;
+} */
+/* a{
+  color: #8D3932;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration-style: dotted;
+} */
+/* table{
+  width: 100%;
+  
+} */
+
+/* //second section
+#Plays-table tr:nth-child(even){
+  background-color: #D3D3D3;
+} */
+/* //third section
+#sonnet-table tr:nth-child(odd){
+  background-color: #D3D3D3;
+} */
+
