@@ -47,3 +47,63 @@ for(let i = 0; i< sonentRows.length; i++){
 
 
 
+//create image
+let img = document.createElement("img");
+img.src = "./icons/pdf_icon_130859.png";
+//put image to its place
+let hamlet = document.getElementById("Hamlet");
+hamlet.appendChild(img);
+
+//style the image
+img.style= "width: 1.5rem; margin-left: 0.7rem; background-color: white; cursor: pointer;";
+//on clicking open the link
+img.onclick = function(){
+  window.location.href = "./Media/Hamlet.pdf";
+}
+let letter = document.querySelector("#letter-icon");
+letter.style.fill = "#ee5311";
+
+let link = document.querySelectorAll("#send-icon");
+
+for(let i = 0; i < link.length; i++)
+{
+  link[i].style = "fill: #4fde52;";
+
+}
+
+
+
+place.style.display = "inline";
+
+//on clicking open the link
+place.onclick = function(){
+  window.location.href = "mailto: henryIV@buckingham.co.uk";
+}
+
+
+//create image
+let img4 = document.createElement("img");
+img4.src = "./icons/send.png";
+img4.style= "width: 1.7rem; margin-left: 0.7rem; background-color: white; cursor: pointer; background-color: #D3D3D3; fill: green;";
+
+let henry = document.getElementById("henry-V");
+henry.appendChild(img4);
+
+
+const svg = document.createElement("http://www.w3.org/2000/svg", "svg");
+
+hello.appendChild(svg);
+
+
+// Reference the button by its id
+const button = document.getElementById("ActivateButton");
+
+button.onclick= function(){
+
+}
+
+
+
+
+
+
