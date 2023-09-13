@@ -25,6 +25,17 @@ td{
   padding-right: 1rem;
   
 }
+#button{
+  padding: 1.2rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.59);
+  margin-top: 5rem;
+  margin-left: 5rem;
+
+}
 
 /*rest of the CSS-rule applied using Javascript*/
 /* #menu{
@@ -57,5 +68,8 @@ list-style: none;
 /* //third section
 #sonnet-table tr:nth-child(odd){
   background-color: #D3D3D3;
+} */
+/* #ActivateButton{
+  color: aqua;
 } */
 

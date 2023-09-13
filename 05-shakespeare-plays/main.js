@@ -61,46 +61,30 @@ img.onclick = function(){
   window.location.href = "./Media/Hamlet.pdf";
 }
 let letter = document.querySelector("#letter-icon");
-letter.style.fill = "#ee5311";
+letter.style = "fill: #ee5311; cursor: pointer;"
 
 let link = document.querySelectorAll("#send-icon");
 
 for(let i = 0; i < link.length; i++)
 {
-  link[i].style = "fill: #4fde52;";
+  link[i].style = "fill: #4fde52; cursor: pointer;";
+  link[1].onclick = function(){
+    window.location.href = "mailto: henryV@buckingham.co.uk";
+  }
 
 }
 
 
 
-place.style.display = "inline";
-
+let place = document.querySelector(".place");
 //on clicking open the link
 place.onclick = function(){
   window.location.href = "mailto: henryIV@buckingham.co.uk";
 }
 
 
-//create image
-let img4 = document.createElement("img");
-img4.src = "./icons/send.png";
-img4.style= "width: 1.7rem; margin-left: 0.7rem; background-color: white; cursor: pointer; background-color: #D3D3D3; fill: green;";
-
-let henry = document.getElementById("henry-V");
-henry.appendChild(img4);
 
 
-const svg = document.createElement("http://www.w3.org/2000/svg", "svg");
-
-hello.appendChild(svg);
-
-
-// Reference the button by its id
-const button = document.getElementById("ActivateButton");
-
-button.onclick= function(){
-
-}
 
 
 
