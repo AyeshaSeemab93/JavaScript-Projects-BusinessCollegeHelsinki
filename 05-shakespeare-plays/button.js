@@ -6,7 +6,6 @@ function loadScript(fileSrc){
   script.src = fileSrc;
   document.body.appendChild(script);
 }
-
 //on click load the JS File
 let button = document.getElementById("button")
 var loaded = false;
@@ -26,9 +25,10 @@ button.onclick = function(){
     button.innerHTML = text;
     loaded = false;
     console.log("loaded is false again ")
-  }
- 
-}
+  }}
+
+
+
 function unload(){
 document.body.removeChild(script);
 }

@@ -34,6 +34,7 @@ td{
   background-color: rgba(0, 0, 255, 0.59);
   margin-top: 5rem;
   margin-left: 5rem;
+  margin-bottom: 10rem;
 
 }
 
@@ -73,3 +74,7 @@ list-style: none;
   color: aqua;
 } */
 
+#Plays-table{
+  border-collapse: collapse;
+
+}
