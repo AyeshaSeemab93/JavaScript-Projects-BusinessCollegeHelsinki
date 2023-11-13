@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-size: 1.2rem;
+    }
+    .flex{
+      display: flex;
+    }
+   .para{
+    flex-basis: 100%;
+    flex-grow: 1;
+   }
+    img{
+     max-width: 100%;
+     flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+ 
+
+  <script>
+    
+
+    const runko = document.body;
+    const main = document.createElement("main");
+    runko.prepend(main);
+    const headsec = document.createElement("header");
+    headsec.className = "ylatunniste";
+    main.prepend(headsec);
+    const header = document.createElement("h1");
+    header.innerHTML = "Tämä on artikkelin otsikko";
+    headsec.append(header);
+    const firstpara = document.createElement("p");
+    firstpara.innerHTML = "Ensimmäinen kappale! Lorem ipsum dolor sit amet, consectetur adipisicingelit. Iusto vero corrupti neque eum adipisci, asperiores in magnam odio mollitia delectus fugit, vel ullam, rerum molestias officis temporibus aspernatur dolor? Dicta.";
+    headsec.append(firstpara);
+   
+
+    const secElement = document.createElement("section");
+    secElement.id = "rinnakkain";
+    secElement.className = "flex";
+    main.append(secElement);
+    const secondpara = document.createElement("p");
+    secondpara.className = "para";
+    secondpara.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima illo nisiblanditiis consequuntur vero aliquid quasi maiores autem at tenetur enimamet dignissimos esse accusamus nam harum eius adipisci est, voluptatem officia quisquam natus quaerat vel temporibus! Quidem iure sit mollitia, voluptates voluptatum consectetur ab delectus tempore necessitatibus, recusandae aliquam.";
+    secElement.append(secondpara);
+
+    const kuva = document.createElement("figure");
+    kuva.id = "kuvanpaikka";
+    const img = document.createElement("img");
+    img.src = "./image/java.gif";
+    kuva.appendChild(img);
+    secElement.append(kuva);
+
+    const footsec = document.createElement("footer");
+    main.append(footsec);
+    const paragraph = document.createElement("p");
+    paragraph.innerHTML = "@ 2019 Juha Konttinen";
+    footsec.append(paragraph);
+
+
+
+//     const scriptElement = document.getElementById("java");
+// runko.insertBefore(scriptElement, runko.lastElementChild);
+  </script>
+</body>
+</html>
